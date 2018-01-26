@@ -33,28 +33,33 @@ also:
 {% endblock %}
 
 {% block attributes %}
-  <dl>
-    <dt>aria-expanded <small>{String="top"}</small></dt>
-    <dd>
-      Automatically set as the <code>open</code> attribute/property changes.
-    </dd>
-
-    <dt>id</dt>
-    <dd>
-      Used by <a href="elements/hx-tabset">&lt;hx-tabset&gt;</a> to
-      wire up a tab to its tabpanel using the <code>aria-controls</code> and
-      <code>aria-labelledby</code> attributes. If you do not define an
-      <code>id</code> attribute, one will be automatically generated.
-    </dd>
-
-    <dt>open</dt>
-    <dd>
-      When present, contents are visible.
-    </dd>
-
-    <dt>role</dt>
-    <dd>
-      Automatically set to <code>tabpanel</code>, if not explicitly defined in markup.
-    </dd>
-  </dl>
+  <hx-dl class="hxVertical">
+    <hx-def>
+      <hx-dt>aria-expanded <small>{String="top"}</small></hx-dt>
+      <hx-dd>
+        Automatically set as the <code>open</code> attribute/property changes.
+      </hx-dd>
+    </hx-def>
+      <hx-def>
+      <hx-dt>id</hx-dt>
+      <hx-dd>
+        Used by <a href="elements/hx-tabset">&lt;hx-tabset&gt;</a> to
+        wire up a tab to its tabpanel using the <code>aria-controls</code> and
+        <code>aria-labelledby</code> attributes. If you do not define an
+        <code>id</code> attribute, one will be automatically generated.
+      </hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>open</hx-dt>
+      <hx-dd>
+        When present, contents are visible.
+      </hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>role</hx-dt>
+      <hx-dd>
+        Automatically set to <code>tabpanel</code>, if not explicitly defined in markup.
+      </hx-dd>
+    </hx-def>
+  </hx-dl>
 {% endblock %}

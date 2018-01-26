@@ -11,12 +11,12 @@ title: <hx-checkbox>
 
   <hx-dl class="hxBox-md metadata">
     <hx-def>
-      <hx-dt>Permitted Parents</hx-dt>
-      <hx-dd>any</hx-dd>
+      <hx-hx-dt>Permitted Parents</hx-hx-dt>
+      <hx-hx-dd>any</hx-hx-dd>
     </hx-def>
     <hx-def>
-      <hx-dt>Permitted Children</hx-dt>
-      <hx-dd>none (content will be removed upon element upgrade)</hx-dd>
+      <hx-hx-dt>Permitted Children</hx-hx-dt>
+      <hx-hx-dd>none (content will be removed upon element upgrade)</hx-hx-dd>
     </hx-def>
   </hx-dl>
 </section>
@@ -116,27 +116,35 @@ title: <hx-checkbox>
 {% endblock %}
 
 {% block attributes %}
-  <dl>
-    <dt>checked</dt>
-    <dd>Checks the checkbox</dd>
-
-    <dt>invalid</dt>
-    <dd>Invalidates the checkbox</dd>
-
-    <dt>disabled</dt>
-    <dd>Disables the checkbox</dd>
-  </dl>
+  <hx-dl class="hxVertical">
+    <hx-def>
+      <hx-dt>checked</hx-dt>
+      <hx-dd>Checks the checkbox</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>invalid</hx-dt>
+      <hx-dd>Invalidates the checkbox</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>disabled</hx-dt>
+      <hx-dd>Disables the checkbox</hx-dd>
+    </hx-def>
+  </hx-dl>
 {% endblock %}
 
 {% block properties %}
-  <dl>
-    <dt>checked <small>(Boolean [false])</small></dt>
-    <dd>Determines if checkbox is checked.</dd>
-
-    <dt>disabled <small>(Boolean [false])</small></dt>
-    <dd>Determines if checkbox is disabled.</dd>
-
-    <dt>indeterminate <small>(Boolean [false])</small></dt>
-    <dd>Determines if checkbox is indeterminate.</dd>
-  </dl>
+  <hx-dl class="hxVertical">
+    <hx-def>
+      <hx-dt>checked <small><em>(Boolean [false])</em></small></hx-dt>
+      <hx-dd>Determines if checkbox is checked.</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>disabled <small>(Boolean [false])</small></hx-dt>
+      <hx-dd>Determines if checkbox is disabled.</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>indeterminate <small>(Boolean [false])</small></hx-dt>
+      <hx-dd>Determines if checkbox is indeterminate.</hx-dd>
+    </hx-def>
+  </hx-dl>
 {% endblock %}

@@ -54,36 +54,43 @@ title: <hx-disclosure>
 {% endblock %}
 
 {% block attributes %}
-  <dl>
-    <dt>aria-controls</dt>
-    <dd>
-      The ID of a target element to associate behavior.
-      Required to wire up display functionality between elements.
-    </dd>
-
-    <dt>aria-expanded*</dt>
-    <dd>
-      Automatically initialized to the same state as the target element.
-      When attribute is updated, target element is updated as well.
-    </dd>
-
-    <dt>role*</dt>
-    <dd>Automatically set to "button", unless explicitly defined in markup.</dd>
-
-    <dt>tabindex*</dt>
-    <dd>Automatically set to "0", unless explicitly defined in markup.</dd>
-  </dl>
+  <hx-dl class="hxVertical">
+    <hx-def>
+      <hx-dt>aria-controls</hx-dt>
+      <hx-dd>
+        The ID of a target element to associate behavior.
+        Required to wire up display functionality between elements.
+      </hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>aria-expanded*</hx-dt>
+      <hx-dd>
+        Automatically initialized to the same state as the target element.
+        When attribute is updated, target element is updated as well.
+      </hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>role*</hx-dt>
+      <hx-dd>Automatically set to "button", unless explicitly defined in markup.</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>tabindex*</hx-dt>
+      <hx-dd>Automatically set to "0", unless explicitly defined in markup.</hx-dd>
+    </hx-def>
+  </hx-dl>
 {% endblock %}
 
 {% block properties %}
-  <dl>
-    <dt>expanded <small>(Boolean)</small></dt>
-    <dd>
-      Mirrors the <code>aria-expanded</code> attribute.
-      <ul>
-        <li>Set to <code>true</code> to expand the target element.</li>
-        <li>Set to <code>false</code> to collapse the target element.</li>
-      </ul>
-    </dd>
-  </dl>
+  <hx-dl class="hxVertical">
+    <hx-def>
+      <hx-dt>expanded <small>(Boolean)</small></hx-dt>
+      <hx-dd>
+        Mirrors the <code>aria-expanded</code> attribute.
+        <ul>
+          <li>Set to <code>true</code> to expand the target element.</li>
+          <li>Set to <code>false</code> to collapse the target element.</li>
+        </ul>
+      </hx-dd>
+    </hx-def>
+  </hx-dl>
 {% endblock %}

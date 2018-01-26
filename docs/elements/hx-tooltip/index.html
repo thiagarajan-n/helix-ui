@@ -156,33 +156,37 @@ title: <hx-tooltip>
 {% endblock %}
 
 {% block attributes %}
-  <dl>
-    <dt>id <small>(String) Required</small></dt>
-    <dd>
+  <hx-dl class="hxVertical">
+    <hx-dt>id <small>(String) Required</small></hx-dt>
+    <hx-dd>
       <p>Links element to target data-element attr placed on the target element.</p>
       <p>
         <strong>NOTE:</strong> Currently this will only find the first element with data-tooltip attr on the page.
       </p>
-    </dd>
-  </dl>
+    </hx-dd>
+  </hx-dl>
 {% endblock %}
 
 {% block properties %}
-  <dl>
-    <dt>open <small>(Boolean [false])</small></dt>
-    <dd>Determines whether or not tooltip is shown</dd>
-
-    <dt>position <small>(String [top])</small></dt>
-    <dd>Determines where tooltip is positioned</dd>
-
-    <dt>trigger-event <small>(String [hover])</small></dt>
-    <dd>
-      Determines what fires the tooltip
-      possible values:
-      <ul>
-        <li>click</li>
-        <li>hover</li>
-      </ul>
-    </dd>
-  </dl>
+  <hx-dl class="hxVertical">
+    <hx-def>
+      <hx-dt>open <small>(Boolean [false])</small></hx-dt>
+      <hx-dd>Determines whether or not tooltip is shown</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>position <small>(String [top])</small></hx-dt>
+      <hx-dd>Determines where tooltip is positioned</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>trigger-event <small>(String [hover])</small></hx-dt>
+      <hx-dd>
+        Determines what fires the tooltip
+        possible values:
+        <ul>
+          <li>click</li>
+          <li>hover</li>
+        </ul>
+      </hx-dd>
+    </hx-def>
+  </hx-dl>
 {% endblock %}

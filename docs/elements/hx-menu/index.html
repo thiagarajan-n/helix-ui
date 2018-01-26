@@ -33,18 +33,22 @@ also:
 {% endblock %}
 
 {% block attributes %}
-  <dl>
-    <dt>open</dt>
-    <dd>Opens the menu</dd>
-
-    <dt>position</dt>
-    <dd>Positions the menu</dd>
-
-    <dt>relative-to <small>(optional)</small></dt>
-    <dd>
-      ID of an element that the menu is positioned relative to. If not
-      set, the menu will be positioned relative to the element with the
-      <code>aria-controls</code> attribute matching the menu ID.
-    </dd>
-  </dl>
+  <hx-dl class="hxVertical">
+    <hx-def>
+      <hx-dt>open</hx-dt>
+      <hx-dd>Opens the menu</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>position</hx-dt>
+      <hx-dd>Positions the menu</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>relative-to <small>(optional)</small></hx-dt>
+      <hx-dd>
+        ID of an element that the menu is positioned relative to. If not
+        set, the menu will be positioned relative to the element with the
+        <code>aria-controls</code> attribute matching the menu ID.
+      </hx-dd>
+    </hx-def>
+  </hx-dl>
 {% endblock %}

@@ -84,18 +84,23 @@ title: <hx-popover>
 {% endblock %}
 
 {% block attributes %}
-  <dl>
-    <dt>open</dt>
-    <dd>Opens the popover</dd>
-  </dl>
+  <hx-dl class="hxVertical">
+    <hx-def>
+      <hx-dt>open</hx-dt>
+      <hx-dd>Opens the popover</hx-dd>
+    </hx-def>
+  </hx-dl>
 {% endblock %}
 
 {% block properties %}
-  <dl>
-    <dt>open <small>(Boolean [false])</small></dt>
-    <dd>Determines if the popover is open.</dd>
-
-    <dt>position <small>(String [bottom-right])</small></dt>
-    <dd>Determines the position of the popover.</dd>
-  </dl>
+  <hx-dl class="hxVertical">
+    <hx-def>
+      <hx-dt>open <small>(Boolean [false])</small></hx-dt>
+      <hx-dd>Determines if the popover is open.</hx-dd>
+    </hx-def>
+    <hx-def>
+      <hx-dt>position <small>(String [bottom-right])</small></hx-dt>
+      <hx-dd>Determines the position of the popover.</hx-dd>
+    </hx-def>
+  </hx-dl>
 {% endblock %}
